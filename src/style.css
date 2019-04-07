@@ -16,3 +16,7 @@
 a.no-action {
   padding: 0 10px;
 }
+
+.highlight {
+  color: var(--primary);
+}

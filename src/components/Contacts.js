@@ -5,13 +5,15 @@ export default function Contacts(props) {
   const { contacts } = props;
   return (
     <div>
-      <div>
-        <ul className="collection spaced">
-          {contacts.map(contact => (
-            <Contact key={contact.id} contact={contact} />
-          ))}
-        </ul>
-      </div>
+      <h2>
+        Contact
+        <span className="highlight"> Manager</span>
+      </h2>
+      <ul className="collection spaced">
+        {contacts.map(contact => (
+          <Contact key={contact.id} contact={contact} />
+        ))}
+      </ul>
     </div>
   );
 }
