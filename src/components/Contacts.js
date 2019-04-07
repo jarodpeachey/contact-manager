@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Contact from './Contact';
 
-class Contacts extends Component {
-  render() {
-    return (
+export default function Contacts(props) {
+  const { contacts } = props;
+  return (
+    <div>
       <div>
         <ul className="collection spaced">
-          {this.props.contacts.map((contact) => (
+          {contacts.map(contact => (
             <Contact key={contact.id} contact={contact} />
           ))}
         </ul>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Contacts;

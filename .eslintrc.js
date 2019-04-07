@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     'linebreak-style': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'arrow-parens': [2, 'as-needed'],
   },
   parser: 'babel-eslint',
 };

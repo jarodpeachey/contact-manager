@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Contact extends Component {
-  render() {
-    return (
-      <li className="collection-item">
-        <strong>{this.props.contact.name}</strong>
-        <div className="right">
-          <small>{this.props.contact.email}</small>
-        </div>
-      </li>
-    );
-  }
+export default function Contact(props) {
+  const { contact } = props;
+  const { name, email, id } = contact;
+  return (
+    <li className="collection-item" id={id}>
+      <strong>{name}</strong>
+      <div className="right">
+        <small>{email}</small>
+      </div>
+    </li>
+  );
 }
-
-export default Contact;
