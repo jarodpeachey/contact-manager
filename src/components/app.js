@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     axios
       .get('http://localhost:8082/contacts')
-      .then((res) => this.setState({ contacts: res.data }));
+      .then(res => this.setState({ contacts: res.data }));
   }
 
   render() {
