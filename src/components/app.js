@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import '../style.css';
-import Contact from '../components/Contact';
+import Contact from './Contact';
+import Header from './layout/Header';
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Contact />
+      <div>
+        <Header content="Contact Manager" />
+        <div className="container">
+          <Contact />
+        </div>
       </div>
     );
   }

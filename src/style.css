@@ -1,0 +1,18 @@
+:root {
+  --primary: #c53613 !important;
+  --primary-dark: #b43414 !important;
+  --accent: #abe9e9 !important;
+  --accent-dark: #93caca !important;
+}
+
+.navbar-content {
+  color: white !important;
+}
+
+.menu-item:hover i {
+  color: rgba(255, 255, 255, 0.733);
+}
+
+a.no-action {
+  padding: 0 10px;
+}
